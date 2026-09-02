@@ -57,8 +57,11 @@ depender de un atributo ARIA para este caso puntual.
 3. Clic derecho en `index.html` o `registro.html` → "Open with Live Server"
 
 ## Capturas de pantalla
+### Parte 1 — Página semántica (portafolio)
 ![Página principal](parte-1-pagina-semantica/img/captura-01.png)
+### Parte 2 — Formulario de registro
 ![Formulario completo](parte-2-formulario-registro/img/captura-01.png)
+### Parte 2 — Formulario de registro intentando enviar
 ![El formulario intente enviar (error 404 es esperado pues /api/registro no existe).](parte-2-formulario-registro/img/captura-02.png)
 
 ## Validación
