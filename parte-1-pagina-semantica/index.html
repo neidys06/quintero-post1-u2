@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Neidys Mariana Quintero Carrillo,
+        estudiante de Ingeniería de Sistemas, Séptimo Semestre. 2026.">
+  <meta name="author" content="Neidys Mariana Quintero Carrillo">
+  <meta name="robots" content="index, follow">
+  <title>Portafolio — Neidys Mariana Quintero Carrillo | Ingeniería de Sistemas</title>
+</head>
+<body>
+
+   <header>
+    <h1>Neidys Mariana Quintero Carrillo</h1>
+    <p>Estudiante de Ingeniería de Sistemas — Séptimo Semestre</p>
+
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+   <main>
+
+    <!-- Sección: presentación personal -->
+    <section id="sobre-mi">
+      <h2>Sobre Mí</h2>
+
+      <figure>
+        <img
+          src="img/perfil.jpeg"
+          alt="Fotografía de perfil de Neidys Mariana Quintero Carrillo"
+          width="150"
+          height="150"
+          loading="eager"
+        >
+        <figcaption>Estudiante de Ingeniería de Sistemas, 2026.</figcaption>
+      </figure>
+
+      <p>
+        Neidys Mariana Quintero Carrillo es estudiante de septimo semestre 
+        de Ingeniería de Sistemas en la Universidad Francisco de Paula 
+        Santander. Sus principales áreas de interés incluyen el desarrollo 
+        de software, la programación y las bases de datos. Se caracteriza 
+        por ser una persona responsable, organizada y comprometida con su 
+        formación académica, con interés en continuar fortaleciendo sus 
+        conocimientos y habilidades en el área de la tecnología.
+
+      </p>
+    </section>
+
+    <!-- Sección: proyectos -->
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+
+      <!-- Cada proyecto es un article: contenido autocontenido -->
+      <article>
+        <h3>Proyecto 1: Sistema de Atención para Recibir Subsidio de Vivienda</h3>
+        <p> Aplicación de escritorio que gestiona la asignación de turnos de
+    atención para solicitantes de subsidio de vivienda. Los usuarios se
+    cargan desde un archivo CSV y se organizan en una lista circular,
+    mientras que dos colas de prioridad distribuyen los turnos dando
+    preferencia a familias numerosas y, en caso de empate, a la fecha
+    de solicitud más antigua. El sistema calcula tiempos de atención
+    por servicio, genera estadísticas de los usuarios atendidos y no
+    atendidos, y envía el turno asignado por correo electrónico. </p>
+        <p> Tecnologías: Java, JavaFX, estructuras de datos (colas de prioridad,
+             listas circulares), procesamiento de archivos CSV, 
+             envío de correos con JavaMail. </p>
+        <a href="https://gitlab.com/neidysmarianaqc/sistema-de-atencion-para-recibir-subsidio-de-vivienda"
+           target="_blank"
+           rel="noopener noreferrer">
+          Ver repositorio en GitLab
+        </a>
+      </article>
+
+      <article>
+        <h3>Proyecto 2: DiccionarioA</h3>
+        <p> Aplicación de escritorio que organiza un diccionario de palabras por
+    letra inicial (A-Z), usando estructuras de datos, especificamente pilas y colas implementadas desde cero
+    para almacenar y recorrer las palabras. Las palabras se cargan desde
+    un archivo alojado en una URL externa, y el sistema permite buscar si
+    una palabra existe en el diccionario, reemplazar patrones de texto
+    dentro de todas las palabras (mostrando cuántos reemplazos se
+    hicieron y en cuáles palabras) y exportar el listado completo a un
+    documento PDF. La interfaz gráfica se construyó con Java Swing. </p>
+        <p>Tecnologías: Java, Swing (NetBeans GUI Builder), 
+            estructuras de datos (pilas, colas), 
+            lectura de archivos por URL, generación de PDF con iText.</p>
+        <a href="https://gitlab.com/neidysmarianaqc/diccionario-a"
+           target="_blank"
+           rel="noopener noreferrer">
+          Ver repositorio en GitLab
+        </a>
+      </article>
+
+    </section>
+<!-- Agregar dentro de <main>, después de la sección proyectos -->
+  <aside id="habilidades">
+    <h2>Habilidades Técnicas</h2>
+
+    <!-- Lista no ordenada: tecnologías sin orden de importancia -->
+    <h3>Tecnologías Web</h3>
+    <ul>
+      <li>HTML5 — Marcado semántico y accesibilidad</li>
+      <li>CSS3 — Diseño responsive y Flexbox</li>
+      <li>JavaScript — Manipulación del DOM y eventos</li>
+    </ul>
+
+    <!-- Lista ordenada: pasos de flujo de trabajo -->
+    <h3>Flujo de Trabajo</h3>
+    <ol>
+      <li>Planificación y diseño de wireframes</li>
+      <li>Desarrollo de la estructura HTML semántica</li>
+      <li>Aplicación de estilos CSS</li>
+      <li>Pruebas en múltiples navegadores</li>
+      <li>Despliegue y control de versiones con Git</li>
+    </ol>
+
+    <!-- Lista de definición: glosario de conceptos -->
+    <h3>Conceptos Clave</h3>
+    <dl>
+      <dt>Semántica HTML</dt>
+      <dd>Uso de etiquetas que describen el significado del contenido.</dd>
+      <dt>Accesibilidad WCAG</dt>
+      <dd>Pautas para hacer el contenido web perceptible, operable, comprensible y robusto para todos los usuarios.</dd>
+      <dt>SEO</dt>
+      <dd>Optimización para que los motores de búsqueda indexen y posicionen correctamente el contenido.</dd>
+    </dl>
+  </aside>
+  <!-- Opción A: cada logro como article independiente -->
+<section id="logros">
+  <h2>Logros y Certificaciones</h2>
+  <article>
+    <h3>CS50x: Introduction to Computer Science</h3>
+    <time datetime="2026">2026</time>
+    <p>Certificación otorgada por Harvard University (CS50) por 
+        completar diez conjuntos de problemas y un proyecto final del curso
+         introductorio de ciencias de la computación.</p>
+  </article>
+  <article>
+    <h3>Introducción a la Ciencia de Datos</h3>
+    <time datetime="2026-05-30">30 de mayo de 2026</time>
+    <p>Certificación otorgada por la Universidad Francisco de Paula 
+        Santander - Cúcuta, a través del programa Cisco Networking 
+        Academy.</p>
+  </article>
+</section>
+
+<!-- Opción B: audio con transcripción dentro de details/summary -->
+<section id="multimedia">
+  <h2>Multimedia</h2>
+  <figure>
+    <audio controls preload="metadata">
+      <source src="audio/intro.mp3" type="audio/mpeg">
+      <source src="audio/intro.ogg" type="audio/ogg">
+      <p>
+        El navegador no soporta audio HTML5.
+        <a href="audio/intro.mp3">Descargar el audio de introducción</a>.
+      </p>
+    </audio>
+    <figcaption>
+      Audio de introducción personal (12 segundos aprox.). Transcripción completa disponible abajo.
+    </figcaption>
+  </figure>
+
+  <details>
+    <summary>Ver transcripción del audio</summary>
+    <p>
+      "Hola, mi nombre es Neidys Mariana Quintero Carrillo. Soy estudiante de séptimo semestre de
+      Ingeniería de Sistemas. Me interesa especialmente el desarrollo de sotfware
+      y la programación."
+    </p>
+  </details>
+</section>
+<section id="preguntas-frecuentes">
+  <h2>Preguntas Frecuentes</h2>
+
+  <details>
+    <summary>¿Por qué este portafolio no tiene una sección de "servicios"?</summary>
+    <p>
+      Este portafolio está enfocado en <mark>evidenciar el aprendizaje del
+      semestre</mark>, no en ofrecer servicios profesionales. El énfasis
+      académico define qué secciones son relevantes en esta etapa.
+    </p>
+  </details>
+
+  <details>
+    <summary>¿El código fuente de los proyectos está disponible?</summary>
+    <p>
+      Sí. Cada proyecto listado en la sección "Proyectos" enlaza a su
+      repositorio público de GitLab correspondiente.
+    </p>
+  </details>
+</section>
+  </main>
+ <footer id="contacto">
+    <h2>Contacto</h2>
+
+    <address>
+      <p>
+        <a href="mailto:neidysmarianaqc@ufps.edu.co">
+          neidysmarianaqc@ufps.edu.co
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/neidys06"
+           target="_blank"
+           rel="noopener noreferrer">
+          GitHub: / neidys06
+        </a>
+      </p>
+    </address>
+
+    <nav aria-label="Navegación del pie de página">
+      <ul>
+        <li><a href="#sobre-mi">Volver al inicio</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+      </ul>
+    </nav>
+
+    <p>
+      <small>
+        &copy; 2026 Neidys Mariana QUintero Carrillo — Ingeniería de Sistemas. Todos los derechos reservados.
+      </small>
+    </p>
+  </footer>
+</body>
+</html>
