@@ -13,6 +13,11 @@ bloque de multimedia (audio) con su recurso de accesibilidad asociado
 (transcripción), una sección de preguntas frecuentes con
 `details`/`summary`, y meta tags de SEO. Ver `parte-1-pagina-semantica/`.
 
+## Parte 2 — Formulario de registro
+Formulario de registro universitario con más de 10 tipos de input HTML5
+(text, email, password, tel, url, date, number, range, color, file,
+checkbox, radio, hidden, textarea, select) agrupados en fieldsets, con
+validación nativa y atributos ARIA. Ver `parte-2-formulario-registro/`.
 
 ## Decisiones de diseño
 
@@ -37,6 +42,27 @@ sincronizado por timestamps) y de todas formas cumple el principio
 literal incluida en el `<details>`, que cualquier usuario —incluyendo
 quienes usan lector de pantalla o no pueden reproducir audio— puede leer.
 
+### 3. Marcado del campo opcional "teléfono" (Parte 2)
+Se eligió la **Opción A**: agregar el texto "(opcional)" directamente en el
+contenido del `<label>`. Esta alternativa es perceptible para **todos** los
+usuarios sin depender de que el navegador o el lector de pantalla exponga
+correctamente la relación `aria-describedby`; al ser visible en el propio
+texto del label, no requiere ningún soporte técnico adicional para
+comunicar que el campo no es obligatorio, lo que la hace más robusta que
+depender de un atributo ARIA para este caso puntual.
+
+## Cómo visualizar el proyecto
+1. Clonar el repositorio: `git clone https://github.com/neidys06/quintero-post1-u2`
+2. Abrir la carpeta en Visual Studio Code
+3. Clic derecho en `index.html` o `registro.html` → "Open with Live Server"
 
 ## Capturas de pantalla
 ![Página principal](parte-1-pagina-semantica/img/captura-01.png)
+![Formulario completo](parte-2-formulario-registro/img/captura-01.png)
+![El formulario intente enviar (error 404 es esperado pues /api/registro no existe).](parte-2-formulario-registro/img/captura-02.png)
+
+## Validación
+- Parte 1: validada en https://validator.w3.org/ sin errores de error.
+- Parte 2: validación nativa del navegador probada en los campos
+  `required`, `pattern`, `min`/`max` y `minlength` (ver checklist en la
+  guía de contenido, Paso 8 de la Parte 2).
